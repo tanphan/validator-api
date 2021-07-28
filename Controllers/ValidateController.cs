@@ -12,6 +12,7 @@ namespace validator.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Produces("application/json")]
     public class ValidatorController : ControllerBase
     {
         public ValidatorController()
