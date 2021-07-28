@@ -26,3 +26,7 @@
 /Users/michaelocampo/Documents/Projects/validator/obj/Debug/net5.0/ref/validator.dll
 /Users/michaelocampo/Documents/Projects/validator/obj/Debug/net5.0/validator.pdb
 /Users/michaelocampo/Documents/Projects/validator/obj/Debug/net5.0/validator.genruntimeconfig.cache
+/Users/michaelocampo/Documents/Projects/validator/bin/Debug/net5.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/michaelocampo/Documents/Projects/validator/bin/Debug/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/michaelocampo/Documents/Projects/validator/bin/Debug/net5.0/Newtonsoft.Json.dll
+/Users/michaelocampo/Documents/Projects/validator/bin/Debug/net5.0/Newtonsoft.Json.Bson.dll
