@@ -62,7 +62,7 @@ namespace validator.Controllers
 
             ValidateService.Add(validate);
             var envelope = $"{{ \"Date\": \"{date}\", \"Validation\": {validation} }}";
-            return CreatedAtAction(nameof(Create), new { id = validate.Id }, envelope);
+            return CreatedAtAction(nameof(Create), new { id = validate.Id }, validate);
             // return Content(envelope, "application/json", Encoding.UTF8);
         }
 
