@@ -10,6 +10,11 @@ namespace validator.Models
         public string Name { get; set; }
         public DateTime Date { get; set; }
 
-        // public bool Validation { get; set; }
+    }
+
+    public class ValidateResponse
+    {
+        public DateTime Date { get; set; }
+        public bool Validation { get; set; }
     }
 }

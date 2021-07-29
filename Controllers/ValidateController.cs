@@ -61,8 +61,16 @@ namespace validator.Controllers
             bool validation = randomBool;
 
             ValidateService.Add(validate);
-            var envelope = $"{{ \"Date\": \"{date}\", \"Validation\": {validation} }}";
-            return CreatedAtAction(nameof(Create), new { id = validate.Id }, validate);
+            // var envelope = $"{{ \"Date\": \"{date}\", \"Validation\": {validation} }}";
+            var envelope = Enumerable.Range(1, 1).Select(index => new ValidateResponse
+            {
+                Date = DateTime.Now.AddDays(index),
+                Validation = randomBool
+            })
+            .ToArray();
+
+            return new JsonResult(envelope);
+            // return CreatedAtAction(nameof(Create), new { id = validate.Id }, validate);
             // return Content(envelope, "application/json", Encoding.UTF8);
         }
 
