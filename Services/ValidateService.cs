@@ -13,8 +13,8 @@ namespace validator.Services
         {
             Validates = new List<Validate>
             {
-                new Validate { Id = 1, Name = "Transaction 1", Date = DateTime.Now },
-                new Validate { Id = 2, Name = "Transaction 2", Date = DateTime.Now }
+                new Validate { Id = 1, messageid = "Transaction 1"},
+                new Validate { Id = 2, messageid = "Transaction 2"}
             };
         }
 

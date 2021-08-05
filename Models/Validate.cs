@@ -7,8 +7,8 @@ namespace validator.Models
     {
 
         public int Id { get; set; }
-        public string Name { get; set; }
-        public DateTime Date { get; set; }
+        public string messageid { get; set; }
+      
 
     }
 
