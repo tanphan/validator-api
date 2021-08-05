@@ -17,6 +17,6 @@ namespace validator.Models
     {
         public DateTime Date { get; set; }
         // public bool Validation { get; set; }
-        public string message { get; set; }
+        public string ResponseDotNet { get; set; }
     }
 }
