@@ -7,7 +7,8 @@ namespace validator.Models
     {
 
         public int Id { get; set; }
-        public string messageid { get; set; }
+        // public string messageid { get; set; }
+        public bool flag { get; set; }
       
 
     }
@@ -15,6 +16,7 @@ namespace validator.Models
     public class ValidateResponse
     {
         public DateTime Date { get; set; }
-        public bool Validation { get; set; }
+        // public bool Validation { get; set; }
+        public string message { get; set; }
     }
 }
