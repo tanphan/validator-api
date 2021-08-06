@@ -67,7 +67,7 @@ namespace validator.Controllers
                 var envelope = Enumerable.Range(1, 1).Select(index => new ValidateResponse
                 {
                     Date = DateTime.Now.AddDays(index),
-                    ResponseDotNet = "Unable to Connect"
+                    ResponseDotNet = "Message not accepted"
                 })
                 .ToArray();
 
@@ -77,7 +77,7 @@ namespace validator.Controllers
                 var envelope = Enumerable.Range(1, 1).Select(index => new ValidateResponse
                 {
                     Date = DateTime.Now.AddDays(index),
-                    ResponseDotNet = "Succesfully Connected"
+                    ResponseDotNet = "Message accepted"
                 })
                 .ToArray();
 
