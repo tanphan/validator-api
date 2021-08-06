@@ -19,4 +19,10 @@ namespace validator.Models
         // public bool Validation { get; set; }
         public string ResponseDotNet { get; set; }
     }
+
+    public class RandomFlag
+    {
+        public bool flag { get; set; }
+    
+    }
 }

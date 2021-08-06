@@ -24,19 +24,18 @@ namespace validator.Controllers
         public ActionResult<List<Validate>> GetAll() =>
             ValidateService.GetAll();
 
-        // [HttpGet]
-        // public IEnumerable<Validate> Get()
-        // {
+        [HttpGet("random")]
+        public IEnumerable<RandomFlag> Get()
+        {
 
-        //     Random rng = new Random();
-        //     bool randomBool = rng.Next(0, 2) > 0;
-        //     return Enumerable.Range(1, 1).Select(index => new Validate
-        //     {
-        //         Date = DateTime.Now.AddDays(index),
-        //         Validation = randomBool
-        //     })
-        //     .ToArray();
-        // }
+            Random rng = new Random();
+            bool randomBool = rng.Next(0, 2) > 0;
+            return Enumerable.Range(1, 1).Select(index => new RandomFlag
+            {
+                flag = randomBool
+            })
+            .ToArray();
+        }
 
         // GET by Id action
 
